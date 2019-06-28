@@ -16,6 +16,7 @@ describe 'hashketball' do
       end
     end
 
+    # TODO: This is only testing the home key, should test away as well
     it 'returns the correct team-level keys' do
       team_level_keys.each do |key|
         expect(game_hash.values.first.keys).to include(key)
